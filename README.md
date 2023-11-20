@@ -90,3 +90,25 @@ Based on the training time graphs for Pyro and PyTorch, the following conclusion
 7. **Debugging and Error Tracing:** Identifying and rectifying errors, especially in complex neural network architectures and probabilistic models, was a time-consuming process. Tracing back errors to their sources required careful examination of the code and model logic.
 
 8. **Data Preprocessing and Feature Engineering:** Efficiently preprocessing the text data and engineering relevant features to feed into our models was a crucial step that required extensive experimentation and refinement.
+
+
+## Usage
+For easy execution the combined code is available in POPL_Project.ipynb
+**Installation Requirements:**
+
+To run the code, the following libraries need to be installed:
+
+- pandas: `pip install pandas`
+- scikit-learn: `pip install scikit-learn`
+- torch: `pip install torch`
+- pyro-ppl: `pip install pyro-ppl`
+
+**Execution Steps:**
+
+1. Clone the repository to your local machine.
+2. Ensure that you have the aforementioned libraries installed in your Python environment.
+3. Navigate to the directory containing the code.
+4. To run the PyTorch version: `python pytorch_NN.py`
+5. To run the Pyro version: `python pyro_NN.py`
+
+Make sure the dataset is accessible and properly located as expected by the code scripts.
