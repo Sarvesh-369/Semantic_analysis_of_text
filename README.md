@@ -95,17 +95,17 @@ Based on the training time graphs for Pyro and PyTorch, the following conclusion
 
 ## Work Split for Pyro Analysis
 
-### Person 1: Exploration and Model Structure in Pyro
+### Rahil: Exploration and Model Structure in Pyro
 **Tasks:**
 - Explore Clustering with TF-IDF: Investigate the use of TF-IDF for feature extraction and evaluate different clustering algorithms.
 - Pyro Implementation - Model Structure: Design probabilistic models within Pyro using the extracted TF-IDF features.
 
-### Person 2: Classification and Training Process in Pyro
+### Shivam: Classification and Training Process in Pyro
 **Tasks:**
 - Naive Bayes Classifier with TF-IDF: Develop a Naive Bayes classifier using TF-IDF features for baseline categorization.
 - Pyro Implementation - Training Process: Implement the training process in Pyro, including loss functions, optimizers, and training loops.
 
-### Person 3: Neural Networks with Pyro and PyTorch
+### Sarvesh: Neural Networks with Pyro and PyTorch
 **Tasks:**
 - Neural Network with Pyro and PyTorch: Construct neural network models for semantic analysis in both Pyro and PyTorch.
 - PyTorch Architecture and Training: Develop and train the neural network architecture using PyTorch, including hyperparameter tuning and performance evaluation.
