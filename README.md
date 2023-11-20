@@ -98,6 +98,7 @@ Based on the training time graphs for Pyro and PyTorch, the following conclusion
 
 ## Usage
 For easy execution the combined code is available in POPL_Project.ipynb
+
 **Installation Requirements:**
 
 To run the code, the following libraries need to be installed:
