@@ -46,13 +46,13 @@
 - Functional Programming Elements: Use of functions for data transformations.
 
 ## 4) Results and Validation
-# 4.1
+### 4.1
 **Testing and Dataset:** The models are tested on the Quora dataset, with a focus on accurately capturing semantic relationships.The model prediction are available in the folder results
 
 **Graphs and Data-driven Proof:** The graphs of exection time vs number of epochs and Losses vs number of epochs are available in the folder results/graphs.
 
 **Effectiveness:** The results demonstrate the effectiveness of each framework in semantic text analysis, validated against the project's objectives.
-# 4.2 
+### 4.2 
 
 ## Conclusions from Time vs. Epoch Analysis
 Based on the training time graphs for Pyro and PyTorch, the following conclusions can be drawn:
@@ -93,6 +93,22 @@ Based on the training time graphs for Pyro and PyTorch, the following conclusion
 
 8. **Data Preprocessing and Feature Engineering:** Efficiently preprocessing the text data and engineering relevant features to feed into our models was a crucial step that required extensive experimentation and refinement.
 
+## Work Split for Pyro Analysis
+
+### Person 1: Exploration and Model Structure in Pyro
+**Tasks:**
+- Explore Clustering with TF-IDF: Investigate the use of TF-IDF for feature extraction and evaluate different clustering algorithms.
+- Pyro Implementation - Model Structure: Design probabilistic models within Pyro using the extracted TF-IDF features.
+
+### Person 2: Classification and Training Process in Pyro
+**Tasks:**
+- Naive Bayes Classifier with TF-IDF: Develop a Naive Bayes classifier using TF-IDF features for baseline categorization.
+- Pyro Implementation - Training Process: Implement the training process in Pyro, including loss functions, optimizers, and training loops.
+
+### Person 3: Neural Networks with Pyro and PyTorch
+**Tasks:**
+- Neural Network with Pyro and PyTorch: Construct neural network models for semantic analysis in both Pyro and PyTorch.
+- PyTorch Architecture and Training: Develop and train the neural network architecture using PyTorch, including hyperparameter tuning and performance evaluation.
 
 ## Usage
 For easy execution the combined code is available in POPL_Project.ipynb
