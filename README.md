@@ -17,8 +17,6 @@
 
 **Testing and Database:** The testing of models is conducted locally. The dataset used is a compressed version of the Quora question-answer pair dataset, focusing on semantic similarities and differences.
 
-**Figure:** [Insert a diagram of the neural network architecture used in the project.]
-
 ## 3) POPL Aspects
 
 **Implementation Insights:** The implementation in both Pyro and PyTorch is closely examined, with a focus on the following POPL aspects:
