@@ -55,13 +55,17 @@
 
 **Effectiveness:** The results demonstrate the effectiveness of each framework in semantic text analysis, validated against the project's objectives.
 # 4.2 
-**Conclusion from Graphs**
-Based on the training time graphs for Pyro and PyTorch, the following conclusions can be drawn:
 
+## Conclusions from Time vs. Epoch Analysis
+Based on the training time graphs for Pyro and PyTorch, the following conclusions can be drawn:
 1. **General Trend:** Training time increases with the number of epochs in both frameworks, as expected.
 2. **Time Efficiency:** PyTorch shows a steady increase, while Pyro, aside from a spike, appears more time-efficient.
 3. **Performance Optimization:** The anomaly in Pyro's training time requires further investigation. Both frameworks could benefit from optimization in the training process.
 4. **Future Work Recommendations:** Additional experiments are needed to confirm the consistency of the observed spike in Pyro and to provide more comprehensive insights into training time performance.
+## Conclusions from Loss vs. Epoch Analysis
+1. **Convergence Behavior:** The Pyro implementation shows a steady and consistent reduction in loss, indicating a stable but potentially slower convergence. PyTorch demonstrates a rapid initial decrease, suggesting a more efficient early training phase.
+2. **Stability and Efficiency:** Pyro's gradual decrease in loss may indicate a more stable optimization process, whereas PyTorch's quick convergence points to greater efficiency in the early epochs.
+3. **Initial Loss Values:** The initial loss in Pyro is lower than in PyTorch, indicating better performace of pyro approach.
 
 ## 5) Potential for Future Work
 
