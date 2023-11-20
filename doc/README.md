@@ -17,8 +17,6 @@
 
 **Testing and Database:** The testing of models is conducted locally. The dataset used is a compressed version of the Quora question-answer pair dataset, focusing on semantic similarities and differences.
 
-**Figure:** [Insert a diagram of the neural network architecture used in the project.]
-
 ## 3) POPL Aspects
 
 **Implementation Insights:** The implementation in both Pyro and PyTorch is closely examined, with a focus on the following POPL aspects:
@@ -48,20 +46,24 @@
 - Functional Programming Elements: Use of functions for data transformations.
 
 ## 4) Results and Validation
-# 4.1
+### 4.1
 **Testing and Dataset:** The models are tested on the Quora dataset, with a focus on accurately capturing semantic relationships.The model prediction are available in the folder results
 
 **Graphs and Data-driven Proof:** The graphs of exection time vs number of epochs and Losses vs number of epochs are available in the folder results/graphs.
 
 **Effectiveness:** The results demonstrate the effectiveness of each framework in semantic text analysis, validated against the project's objectives.
-# 4.2 
-**Conclusion from Graphs**
-Based on the training time graphs for Pyro and PyTorch, the following conclusions can be drawn:
+### 4.2 
 
+## Conclusions from Time vs. Epoch Analysis
+Based on the training time graphs for Pyro and PyTorch, the following conclusions can be drawn:
 1. **General Trend:** Training time increases with the number of epochs in both frameworks, as expected.
 2. **Time Efficiency:** PyTorch shows a steady increase, while Pyro, aside from a spike, appears more time-efficient.
 3. **Performance Optimization:** The anomaly in Pyro's training time requires further investigation. Both frameworks could benefit from optimization in the training process.
 4. **Future Work Recommendations:** Additional experiments are needed to confirm the consistency of the observed spike in Pyro and to provide more comprehensive insights into training time performance.
+## Conclusions from Loss vs. Epoch Analysis
+1. **Convergence Behavior:** The Pyro implementation shows a steady and consistent reduction in loss, indicating a stable but potentially slower convergence. PyTorch demonstrates a rapid initial decrease, suggesting a more efficient early training phase.
+2. **Stability and Efficiency:** Pyro's gradual decrease in loss may indicate a more stable optimization process, whereas PyTorch's quick convergence points to greater efficiency in the early epochs.
+3. **Initial Loss Values:** The initial loss in Pyro is lower than in PyTorch, indicating better performace of pyro approach.
 
 ## 5) Potential for Future Work
 
@@ -90,3 +92,42 @@ Based on the training time graphs for Pyro and PyTorch, the following conclusion
 7. **Debugging and Error Tracing:** Identifying and rectifying errors, especially in complex neural network architectures and probabilistic models, was a time-consuming process. Tracing back errors to their sources required careful examination of the code and model logic.
 
 8. **Data Preprocessing and Feature Engineering:** Efficiently preprocessing the text data and engineering relevant features to feed into our models was a crucial step that required extensive experimentation and refinement.
+
+## Work Split for Pyro Analysis
+
+### Rahil: Exploration and Model Structure in Pyro
+**Tasks:**
+- Explore Clustering with TF-IDF: Investigate the use of TF-IDF for feature extraction and evaluate different clustering algorithms.
+- Pyro Implementation - Model Structure: Design probabilistic models within Pyro using the extracted TF-IDF features.
+
+### Shivam: Classification and Training Process in Pyro
+**Tasks:**
+- Naive Bayes Classifier with TF-IDF: Develop a Naive Bayes classifier using TF-IDF features for baseline categorization.
+- Pyro Implementation - Training Process: Implement the training process in Pyro, including loss functions, optimizers, and training loops.
+
+### Sarvesh: Neural Networks with Pyro and PyTorch
+**Tasks:**
+- Neural Network with Pyro and PyTorch: Construct neural network models for semantic analysis in both Pyro and PyTorch.
+- PyTorch Architecture and Training: Develop and train the neural network architecture using PyTorch, including hyperparameter tuning and performance evaluation.
+
+## Usage
+For easy execution the combined code is available in POPL_Project.ipynb
+
+**Installation Requirements:**
+
+To run the code, the following libraries need to be installed:
+
+- pandas: `pip install pandas`
+- scikit-learn: `pip install scikit-learn`
+- torch: `pip install torch`
+- pyro-ppl: `pip install pyro-ppl`
+
+**Execution Steps:**
+
+1. Clone the repository to your local machine.
+2. Ensure that you have the aforementioned libraries installed in your Python environment.
+3. Navigate to the directory containing the code.
+4. To run the PyTorch version: `python pytorch_NN.py`
+5. To run the Pyro version: `python pyro_NN.py`
+
+Make sure the dataset is accessible and properly located as expected by the code scripts.
